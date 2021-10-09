@@ -1,3 +1,4 @@
+#encoding=utf-8
 import zipfile
 import rarfile
 import os
@@ -12,7 +13,8 @@ parser.add_argument('-i','--input', help='Insert the file path of compressed fil
 parser.add_argument('rules', nargs='*', help='<min> <max> <character>')
 
 # Const Character
-CHARACTER = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_+=~`[]{}|\\:;\"'<>,.?/"
+# CHARACTER = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_+=~`[]{}|\\:;\"'<>,.?/"
+CHARACTER = "abcdefghijklmnopqrstuvwxyz0123456789"
 
 class Check:
     def __init__(self, Arg):
